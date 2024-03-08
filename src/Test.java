@@ -119,16 +119,16 @@ public class Test {
 
     public static void main(String[] args) {
         System.out.println("Test 1 - put i delete");
-        //test1();
+        test1();
         System.out.println("Test 2 - get");
-        //test2();
+        test2();
         System.out.println("Test 3 - collisions");
-        //test3();
+        test3();
         System.out.println("Test 4 - resize");
-        //test4();
+        test4();
         System.out.println("Test 5 - collisions and resize");
-        //test5();
+        test5();
         System.out.println("Test 6 - iterator");
-        //test6();
+        test6();
     }
 }

@@ -27,7 +27,7 @@ public class CustomIterator <K,V> implements Iterator<Pair<K, V>> {
         Pair<K,V> pair = map.getMap()[curr];
         visited++;
         find();
-        return  pair;
+        return pair;
     }
 
     public void find(){

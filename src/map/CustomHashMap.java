@@ -63,7 +63,7 @@ public class CustomHashMap <K,V> implements Iterable<Pair<K,V>>{
         while (map[index] != null){
             if(map[index].getKey().equals(key) && !map[index].isDeleted()){
                 map[index].setDeleted(true);
-                this.size--;
+                size--;
                 return;
             }
             i++;
@@ -72,7 +72,7 @@ public class CustomHashMap <K,V> implements Iterable<Pair<K,V>>{
     }
 
     public void resize(){
-        this.tableSize = tableSize * 2;
+        tableSize = tableSize * 2;
         Pair<K, V>[] newMap = (Pair<K, V>[]) new Pair[tableSize];
         for (Pair pair : map){
             if(pair != null && !pair.isDeleted()){
@@ -87,7 +87,7 @@ public class CustomHashMap <K,V> implements Iterable<Pair<K,V>>{
             }
         }
 
-        this.map = newMap;
+        map = newMap;
     }
 
     @Override
